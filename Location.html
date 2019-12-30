@@ -31,14 +31,33 @@ margin-right:200px;
 <form name="location">
 
 <div class="row">
-<div class="col-xs-12 middle" style="height:200px; text-align:center">
+<div class="col-xs-12 middle" style="height:200px;width:800px; text-align:center">
 <h2 align="center" style="font-family:seriff; font-size:25"><b>Delivery Location</b></h2><br/>
 
-<b>TO:<input type="text" name="tolocation" id="tolocation" placeholder="TO" pattern="^[a-zA-Z, ]+$" oninput="tonameValidate()"/> </b>
+
+<b>To:<select name="tolocation">
+						<option value="select" >Select...</option>
+						<option value="bglr" class="option1">BANGLORE</option>
+						<option value="cmbtre" class="option1">COIMBATORE</option>
+						<option value="kochi" class="option1">KOCHI</option>
+						</select>
+						<span id="span1"> </span> </b> &nbsp;&nbsp;&nbsp;&nbsp;
+
+<b>From:<select name="fromlocation">
+						<option value="select" >Select...</option>
+						<option value="bglr" class="option1">BANGLORE</option>
+						<option value="cmbtre" class="option1">COIMBATORE</option>
+						<option value="kochi" class="option1">KOCHI</option>
+						</select>
+						<span id="span1"> </span> </b>
+
+
+
+<!--<b>TO:<input type="text" name="tolocation" id="tolocation" placeholder="TO" pattern="^[a-zA-Z, ]+$" oninput="tonameValidate()"/> </b>
 <span id="span1" style="color:red"> </span>&nbsp;&nbsp;&nbsp;&nbsp;
 <b>FROM:<input type="text" name="fromlocation" id="fromlocation" placeholder="FROM" pattern="^[a-zA-Z, ]+$" oninput="fromnameValidate()"/></b>
 <span id="span2" style="color:red"> </span>
-<br/><br/>
+<br/><br/>-->
 <div align="center"><input type="button" value="SEARCH" name="btn"/>
 </div>
 </div>
