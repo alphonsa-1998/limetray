@@ -35,7 +35,7 @@ margin-right:200px;
 <h2 align="center" style="font-family:seriff; font-size:25"><b>Delivery Location</b></h2><br/>
 
 
-<b>To:<select>
+<b>From:<select>
 						<option value="" >Select...</option>
 						<option value="bglr" class="tolocation">BANGLORE</option>
 						<option value="cmbtre" class="tolocation">COIMBATORE</option>
@@ -43,7 +43,7 @@ margin-right:200px;
 						</select>
 						<span id="err"></span> </b> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
 
-<b>From:<select>
+<b>To:<select>
 						<option value="" >Select...</option>
 						<option value="bglr" class="fromlocation">BANGLORE</option>
 						<option value="cmbtre" class="fromlocation">COIMBATORE</option>
@@ -69,8 +69,13 @@ margin-right:200px;
 <th colspan="3">TRAIN NO:</th>
 </tr>
 <tr>
+<th>FROM:</th>
+<th></th>
+<th>TO:</th>
+</tr>
+<tr>
 <th>TIMING</th>
-<th>STATION</th>
+<th>STOPS</th>
 <th>RESTAURANT</th>
 </tr>
 <tr>
@@ -79,9 +84,24 @@ margin-right:200px;
 <td>Salt Indian Restaurant</td>
 </tr>
 <tr>
-<td>13.07</td>
-<td>Coimbatore</td>
+<td>08.40</td>
+<td>Dharmapuri(DPJ)</td>
+<td>Dazzle Dinette Drive-in Restaurant</td>
+</tr>
+<tr>
+<td>11.20</td>
+<td>Erode Junction (ED) </td>
+<td>The Oasis Restaurant</td>
+</tr>
+<tr>
+<td>13.05</td>
+<td>Coimbatore Junction (CBE)</td>
 <td>Jalpaan Coimbatore</td>
+</tr>
+<tr>
+<td>15.22</td>
+<td>Thrisur (TCR) </td>
+<td>Navaratna</td>
 </tr>
 
 <td>16.55</td>
@@ -138,6 +158,10 @@ else
 document.getElementById("err1").innerHTML="";
 return true;
 }}
+
+
+
+
 
 
 
